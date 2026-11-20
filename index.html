@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>张德品 · 互联网管理与架构</title>
+<title>张德品 · 平台架构与 AI-Native 实践</title>
 <meta name="description" content="张德品个人简历。京东集团本地生活部门 C2 级架构师 P9，专注 LBS 平台化建设、业务域平台化建设与 AI-Native 研发实践。">
 <meta name="theme-color" content="#101c33">
 <link rel="stylesheet" href="style.css">
@@ -16,8 +16,8 @@
 <div class="hero-inner">
   <div class="hero-copy">
     <h1>张德品</h1>
-    <p class="role">互联网管理与架构</p>
-    <p class="hero-description">从 0 到 1 建设 LBS 平台，面向消费者的位置服务日调用达 10 亿级。主导本地生活业务域架构升级与研发团队 AI-Native 实践。</p>
+    <p class="role">平台架构与 AI-Native 实践</p>
+    <p class="hero-description">主导京东本地生活业务域架构升级与研发团队 AI-Native 实践。从 0 到 1 建设 LBS 平台，面向消费者的位置服务日调用达 10 亿级。</p>
     <div class="hero-tags"><span>LBS 平台化建设</span><span>业务域平台化建设</span><span>AI-Native 研发实践</span></div>
     <div class="actions"><a class="button primary" href="#projects">查看项目实践</a><a class="button secondary" href="mailto:56098148@qq.com">邮件联系</a></div>
     <p class="location">意向城市 · 北京</p>
@@ -25,7 +25,7 @@
 <aside class="hero-aside" aria-label="职业概要">
   <h2>职业概要</h2>
   <div class="focus-row"><span>现任</span><strong>京东集团<br><small>本地生活部门 C2 级架构师 P9</small></strong></div>
-  <div class="focus-row"><span>曾任</span><strong>支付宝 · 高级技术专家 P8</strong></div>
+  <div class="focus-row"><span>曾任</span><strong>蚂蚁集团 · 高级技术专家 P8</strong></div>
   <section class="domain-map" aria-labelledby="scenarios-title">
     <h3 id="scenarios-title">业务场景</h3>
     <p id="domains-label">业务域</p>
@@ -35,7 +35,7 @@
 <div class="metrics">
   <div><strong>5<span>pt</span></strong><p>线下扫码成功率提升</p><small>长耗时扫码占比降至万分之五</small></div>
   <div><strong>平台化</strong><p>主导商品、门店、营销等业务域架构升级</p></div>
-  <div><strong><span>近 </span>20%</strong><p>AI-Native 实践提升研发团队端到端交付效率</p></div>
+  <div><strong><span>近 </span>20%</strong><p>AI-Native 实践提升研发交付效率</p><small>从 PRD 对抗到完成代码测试并提交 PR</small></div>
 </div>
 </section>
 <section id="expertise" class="section" aria-labelledby="skills-title">
@@ -69,7 +69,7 @@
         <dt>统一 Harness 技能包</dt>
         <dd>主导建设统一 Harness 技能包，通过 CLI 分发版本化技能包，并联动 Multica 协同工作台，提高智能体执行研发任务的自动化程度。</dd>
         <dt>研发交付自动化</dt>
-        <dd>把知识库、交付工具和质量门禁纳入研发流程，在本地提交和 CI 阶段自动执行检查。团队研发自动化率提高，端到端交付效率提升近 20%。</dd>
+        <dd>把知识库、交付工具和质量门禁纳入研发流程。从接收 PRD 并开展 PRD 对抗，到完成代码测试并提交 PR，团队研发交付效率提升近 20%。</dd>
       </dl>
     </article>
   </div>
@@ -84,11 +84,15 @@
 <article class="project featured">
 <div class="project-meta"><span>京东集团 · 架构主导</span><span>电商平台架构 / DDD</span></div>
 <h3>业务域平台化建设</h3>
-<p class="project-scope"><strong>商品发品成功率从 76% 提升至 98%+。</strong> 主导商品系统改造，将各业态独立建设的烟囱式架构收敛为统一的商品模型与服务，支持实物商品和服务商品等多业态。</p>
+<p class="project-scope"><strong>商品发品成功率从 76% 提升至 98%+。</strong> 主导商品平台化改造，为支持餐饮套餐、区域化管品和酒店商品建立统一的商品能力。</p>
 <div class="project-context"><div><h4>业务目标与挑战</h4><p>面向本地生活多业态发展，既要复用商品、营销、订单与商家门店的共性能力，也要支持不同业态的差异化扩展。核心问题是明确统一模型、领域职责与扩展边界。</p></div><div><h4>我的职责</h4><p>负责部门架构，主导核心系统的平台化升级，统筹商品模型统一、促销模型升级及订单链路改造。</p></div></div>
 <h4 class="architecture-heading">关键架构设计</h4>
-<div class="project-columns"><div><h4>统一领域模型与扩展边界</h4><p>基于 DDD 梳理核心领域，梳理各商品类型独立建设的模型与服务，将共性收敛到统一商品模型和商品服务，保留业态扩展边界。</p></div><div><h4>促销能力平台化</h4><p>将网格和城市纳入营销模型，支持按地域创建促销活动和优惠券，并明确促销规则与商品、订单的协作关系。</p></div><div><h4>交易链路协同</h4><p>以商品、营销与订单的领域边界为基础改造订单链路，明确核心流程及系统职责，支撑多业态交易流程衔接。</p></div></div>
-<p class="result"><strong>营销提效</strong>升级营销模型后，创建促销活动和优惠券的耗时从<b>小时级</b>缩短至<b>分钟级</b>。</p>
+<div class="project-columns">
+<div><h4>统一商品模型</h4><p>将各业态独立建设的商品模型收敛为统一模型，同时支持实物商品和服务商品，保留业态扩展边界。</p></div>
+<div><h4>收敛场景服务 API</h4><p>统一场景服务的接口，减少各应用重复对接同类商品能力。</p></div>
+<div><h4>架构分层与应用精简</h4><p>按 BFF → Center → Base 分层，明确应用编排、核心业务服务和基础能力的职责，精简应用层。</p></div>
+</div>
+<p class="result"><strong>营销与交易</strong>营销模型支持网格级和城市级配置，创建促销活动和优惠券的耗时从<b>小时级</b>缩短至<b>分钟级</b>。明确商品、营销与订单的协作边界，支持多业态交易链路改造。</p>
 </article>
 <article class="project">
 <div class="project-meta"><span>京东集团 · 研发基础设施建设</span><span>AI-Native / 工程治理</span></div>
@@ -96,7 +100,7 @@
 <div class="project-context"><div><h4>业务目标与挑战</h4><p>将 AI 协作贯穿需求规划、设计、构建、验证、部署和运维反馈，使研发知识与技能可复用、工程约束可执行，同时兼顾团队标准与项目差异。</p></div><div><h4>我的职责</h4><p>主导本地生活研发团队的 AI-Native 实践，负责统一 Harness 技能包的设计、分发，以及项目接入后的使用和治理。</p></div></div>
 <h4 class="architecture-heading">关键架构设计</h4>
 <div class="project-columns"><div><h4>统一入口与能力资产</h4><p>将团队知识库、交付工具与工程规约组织为可复用技能，通过统一 Agent 入口供各项目在规划、开发和交付中调用。</p></div><div><h4>资产分发与版本治理</h4><p>设计 Hub 权威源与 CLI 分发机制，支持版本化、锁定、校验及回滚；通过受管区块分离团队标准与项目扩展，减少规范漂移。</p></div><div><h4>质量门禁与反馈机制</h4><p>设计 Agent Hooks、本地提交与 CI 三级门禁，将工程约束转化为检查；规划资产采用、版本覆盖、技能使用及质量指标，支持持续改进。</p></div></div>
-<p class="result"><strong>落地成果</strong>通过 CLI 分发版本化技能包，并联动 Multica 协同工作台，让智能体复用团队技能、自动执行更多研发任务。研发团队端到端交付效率提升<b>近 20%</b>。</p>
+<p class="result"><strong>落地成果</strong>通过 CLI 分发版本化技能包，并联动 Multica 协同工作台，让智能体复用团队技能、自动执行更多研发任务。以接收 PRD 并开展 PRD 对抗为起点、完成代码测试并提交 PR 为终点，团队研发交付效率提升<b>近 20%</b>。</p>
 </article>
 <article class="project">
 <div class="project-meta"><span>支付宝 · 技术一号位</span><span>2018.12 — 2023.07</span></div>
