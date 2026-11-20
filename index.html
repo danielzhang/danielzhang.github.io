@@ -1,95 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#08111f">
-  <meta name="description" content="张德品 — 架构师个人简历">
-  <title>张德品 | 架构师</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>张德品 · 互联网管理与架构</title>
+<meta name="description" content="张德品个人简历。专注电商平台架构、AI-Native 研发基础设施、大规模分布式系统与技术团队管理。">
+<meta name="theme-color" content="#101c33">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="grid-bg" aria-hidden="true"></div>
-  <nav class="nav" aria-label="主导航">
-    <a class="brand" href="#top" aria-label="返回顶部"><span class="brand-mark">ZD</span><span>Daniel Zhang</span></a>
-    <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">☰</button>
-    <div class="nav-links">
-      <a href="#about">简介</a>
-      <a href="#expertise">专长</a>
-      <a href="#experience">经历</a>
-      <a href="#contact">联系</a>
-    </div>
-  </nav>
-
-  <main id="top">
-    <section class="hero section">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span>个人简历 / 2026</div>
-        <h1>张德品</h1>
-        <p class="role"><span>架构师</span><b></b>Architect</p>
-        <p class="summary">聚焦系统架构、技术治理与工程效能，<br>把复杂问题拆解为清晰、可靠、可演进的方案。</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#experience">查看经历 <span>↘</span></a>
-          <a class="button secondary" href="#contact">联系我 <span>→</span></a>
-        </div>
-      </div>
-      <div class="portrait-wrap reveal">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="portrait-card">
-          <div class="portrait-grid"></div>
-          <span class="initials">ZDP</span>
-          <div class="corner top-left"></div>
-          <div class="corner bottom-right"></div>
-        </div>
-        <div class="metric-card"><strong>Architecture</strong><span>System · Solution · Platform</span></div>
-      </div>
-    </section>
-
-    <section class="stats section reveal" aria-label="核心能力概览">
-      <article><span>01</span><strong>系统架构</strong><p>面向可扩展与高可靠性的技术设计</p></article>
-      <article><span>02</span><strong>技术治理</strong><p>标准、规范与工程体系持续优化</p></article>
-      <article><span>03</span><strong>工程效能</strong><p>以平台化能力降低研发与交付成本</p></article>
-    </section>
-
-    <section class="section about" id="about">
-      <div class="section-heading reveal"><span>About / 简介</span><h2>以架构思维，<br>连接业务与技术。</h2></div>
-      <div class="about-copy reveal">
-        <p>我是一名架构师，关注业务目标、技术演进和组织协作之间的平衡，擅长在复杂约束下形成可落地的整体方案。</p>
-        <p>我的工作涵盖架构设计、技术选型、性能与可靠性、平台能力建设，以及工程团队的技术方法与协作机制。</p>
-      </div>
-    </section>
-
-    <section class="section expertise" id="expertise">
-      <div class="section-heading reveal"><span>Expertise / 专长</span><h2>能力矩阵</h2></div>
-      <div class="skill-grid">
-        <article class="skill-card reveal"><div class="skill-number">01</div><h3>系统与应用架构</h3><p>领域建模、分层架构、微服务与组件化设计。</p><div class="tags"><span>Architecture</span><span>DDD</span><span>Microservices</span></div></article>
-        <article class="skill-card reveal"><div class="skill-number">02</div><h3>平台与中台建设</h3><p>技术平台、公共能力、数据与业务平台规划。</p><div class="tags"><span>Platform</span><span>Cloud Native</span><span>Integration</span></div></article>
-        <article class="skill-card reveal"><div class="skill-number">03</div><h3>技术治理与标准</h3><p>架构评审、技术选型、安全、规���与演进路线。</p><div class="tags"><span>Governance</span><span>Standards</span><span>Risk</span></div></article>
-        <article class="skill-card reveal"><div class="skill-number">04</div><h3>工程效能与交付</h3><p>DevOps、持续交付、可观测性与质量体系。</p><div class="tags"><span>DevOps</span><span>SRE</span><span>Quality</span></div></article>
-      </div>
-    </section>
-
-    <section class="section experience" id="experience">
-      <div class="section-heading reveal"><span>Experience / 经历</span><h2>职业路径</h2></div>
-      <div class="timeline">
-        <article class="timeline-item reveal"><time>至今</time><div><h3>架构师</h3><p>负责技术架构规划、核心方案设计、平台能力建设及技术团队协作，推动业务与技术目标持续对齐。</p></div></article>
-        <article class="timeline-item reveal"><time>Before</time><div><h3>技术与工程经验</h3><p>积累系统设计、研发管理、工程交付及技术问题解决经验，并持续关注新技术与行业最佳实践。</p></div></article>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="contact-inner reveal">
-        <div><span>Let’s connect</span><h2>构建下一段<br>值得信赖的系统。</h2></div>
-        <a class="contact-link" href="mailto:hello@zhangdepin.com" aria-label="发送邮件">hello@zhangdepin.com <b>↗</b></a>
-      </div>
-    </section>
-  </main>
-
-  <footer><p>© 2026 张德品</p><p>Architecture · Technology · Systems</p></footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<a class="skip" href="#main">跳转到正文</a>
+<header><a class="brand" href="#"><span class="monogram">张</span>张德品<span class="brand-sub">个人简历 / 2026</span></a><nav aria-label="主导航"><a href="#expertise">专业能力</a><a href="#experience">职业经历</a><a href="#projects">项目实践</a><a class="nav-contact" href="#contact">联系我</a></nav></header>
+<main id="main">
+<section class="hero">
+<div class="hero-inner"><div class="hero-copy"><p class="eyebrow">TECHNOLOGY LEADERSHIP & ARCHITECTURE</p><h1>张德品<span>让架构支撑业务，<br>让智能融入研发。</span></h1><p class="role">互联网管理与架构</p><p class="hero-description">聚焦电商平台架构与 AI-Native 研发基础设施，<br class="desktop">连接复杂业务、工程能力与团队成长。</p><div class="hero-tags"><span>平台化架构</span><span>AI-Native</span><span>技术领导力</span></div><div class="actions"><a class="button primary" href="#projects">查看项目实践</a><a class="button secondary" href="mailto:56098148@qq.com">邮件联系</a></div><p class="location">意向城市 · 北京</p></div>
+<aside class="hero-aside" aria-label="职业概要"><p class="eyebrow">CURRENT FOCUS</p><h2>从业务复杂度，<br>到平台复用力。</h2><div class="focus-row"><span>现任</span><strong>京东集团<br><small>本地生活部门 C2 级架构师 P9</small></strong></div><div class="focus-row"><span>曾任</span><strong>支付宝 · 高级技术专家 P8<br><small>码平台与终端技术组二级 TL</small></strong></div><div class="architecture" aria-hidden="true"><span>业务场景</span><div class="arch-line"></div><div class="domain-grid"><b>商品</b><b>营销</b><b>订单</b><b>商家门店</b></div><div class="arch-line"></div><span class="arch-base">统一领域模型 · 平台能力复用</span></div></aside></div>
+<div class="metrics"><div><strong>20%<span>+</span></strong><p>团队端到端研发提效</p><small>AI-Native 研发基础设施</small></div><div><strong>10<span>亿+</span></strong><p>地理服务日调用量</p><small>蚂蚁 LBS 平台</small></div><div><strong>1<span>/10</span></strong><p>优化后长耗时扫码数量</p><small>支付宝扫一扫平台升级</small></div></div>
+</section>
+<section id="expertise" class="section"><div class="section-heading"><div><p class="eyebrow">EXPERTISE</p><h2>从架构设计，到规模化落地</h2></div><p>扎根业务，构建可复用的技术能力。</p></div><div class="expertise-grid">
+<article><span class="icon" aria-hidden="true">◇</span><h3>平台化架构</h3><p>基于 DDD 梳理商品、营销、订单、商家门店等核心领域，统一领域模型与能力边界，推动核心系统从业务定制向平台复用演进，支持多业态发展。</p><div class="tags"><span>DDD 领域建模</span><span>多业态平台</span></div></article>
+<article><span class="icon" aria-hidden="true">✳</span><h3>AI-Native 建设</h3><p>围绕统一 Agent 入口、Skills 资产、工程规约、执行门禁与 CLI 工具组织研发能力，覆盖需求规划、设计、开发、测试、部署和运维全流程，推动团队端到端提效 20%+。</p><div class="tags"><span>Agent / Skills</span><span>工程治理</span></div></article>
+<article><span class="icon" aria-hidden="true">⌘</span><h3>大规模工程实践</h3><p>擅长分布式系统架构、高性能与高可用保障，拥有多个亿级互联网产品建设经验；深耕 LBS、码平台及线下支付领域，推动平台从产品化向商业化输出。</p><div class="tags"><span>高性能与高可用</span><span>亿级产品</span></div></article>
+<article><span class="icon" aria-hidden="true">◎</span><h3>技术领导力</h3><p>具备架构规划、跨团队协同与团队管理经验；曾担任支付宝码平台与终端技术组二级 TL，在业务方向探索、研发效能和技术能力沉淀方面持续推动改进。</p><div class="tags"><span>架构规划</span><span>团队管理</span></div></article></div></section>
+<section id="experience" class="experience-section"><div class="section"><div class="section-heading"><div><p class="eyebrow">EXPERIENCE</p><h2>职业经历</h2></div><p>从地理信息服务，到支付与电商平台。</p></div><div class="timeline">
+<article class="job"><div class="job-date">2023.07.03 — 至今<span class="current">当前</span></div><div><h3>京东集团</h3><p class="job-role">本地生活部门 C2 级架构师 P9</p><p>负责本地生活部门架构，主导商品、营销、订单、商家门店等核心系统的平台化架构升级，以 DDD 领域建模支撑多业态的共性能力复用与差异化扩展。</p><p>重点推进商品模型统一、促销模型升级与订单链路改造；建设团队 AI-Native 研发基础设施，将研发知识、工程规范和可复用技能融入交付流程，推动团队端到端效率提升 20%+。</p></div></article>
+<article class="job"><div class="job-date">2013.12 — 2023.07</div><div><h3>蚂蚁金服 <span>支付宝事业群</span></h3><p class="job-role">高级技术专家 P8</p><p>负责 LBS 基础服务、空间数据挖掘及平台化与商业化建设，支撑支付宝、口碑、国际、网商等业务。</p><p>担任支付应用码平台与终端技术组二级 TL，负责扫一扫、付款码、分享、终端设备等产品的平台化能力建设。</p><p>负责收钱码、当面付等亿级产品的数字化升级与支付成功率优化，搭建线下支付体验洞察平台，以数据分析支持产品优化与业务增长。</p></div></article>
+<article class="job"><div class="job-date">2012.10 — 2013.12</div><div><h3>图吧科技 <span>MapBar</span></h3><p class="job-role">部门技术副经理</p><p>负责地理服务 API 建设，包括地理编码、逆地理编码、POI 搜索和公交搜索等服务。</p></div></article>
+<article class="job"><div class="job-date">2009.10 — 2012.10</div><div><h3>esriChina</h3><p class="job-role">地图研发工程师</p><p>负责中文地理编码服务及 ArcGIS 军标插件开发。</p></div></article>
+<article class="job"><div class="job-date">2008.04 — 2009.10</div><div><h3>中科软</h3><p class="job-role">软件开发工程师</p></div></article></div></div></section>
+<section id="projects" class="section"><div class="section-heading"><div><p class="eyebrow">SELECTED PROJECTS</p><h2>重点项目实践</h2></div><p>以工程化方式，解决真实业务问题。</p></div>
+<article class="project featured"><div class="project-meta"><span>京东集团 · 架构主导</span><span>平台化架构</span></div><h3>本地生活系统平台化架构升级</h3><p class="project-intro">围绕本地生活多业态发展需求，基于 DDD 梳理商品、营销、订单、商家门店等核心领域，推动领域模型、系统职责与平台能力统一。</p><div class="project-columns"><div><h4>商品模型统一</h4><p>梳理不同业态的商品共性与差异，统一商品核心模型，明确通用能力与业态扩展边界，为多业态接入和能力复用提供基础。</p></div><div><h4>促销模型升级</h4><p>围绕多业态营销诉求升级促销领域模型，梳理促销规则与商品、订单的协作关系，推动营销能力平台化复用。</p></div><div><h4>订单链路改造</h4><p>推进商品、营销与订单之间的链路改造，梳理核心流程及领域边界，支撑多业态交易流程衔接与扩展。</p></div></div><p class="result"><strong>项目价值</strong>沉淀面向多业态的商品、促销与订单能力，为后续业务扩展提供统一架构基础。</p></article>
+<article class="project"><div class="project-meta"><span>京东集团</span><span>AI-Native</span></div><h3>团队 AI-Native 研发基础设施建设</h3><p class="project-intro">建设可复用、可治理的 AI-Native 研发能力，将 AI 协作融入需求规划、设计、构建、验证、部署及运维反馈。</p><div class="project-columns"><div><h4>统一能力体系</h4><p>设计统一 Agent 入口与 Skills 资产体系，组织知识库、工程规约、记忆管理、能力测评及项目接入等通用能力，支撑研发六阶段协作。</p></div><div><h4>工程化与治理</h4><p>设计 Hub 权威源与 CLI 分发机制，支持资产版本化、锁定、校验及回滚；通过受管区块分离团队标准与项目扩展，减少规范漂移。</p></div><div><h4>质量与反馈</h4><p>设计 Agent Hooks、本地提交及 CI 三级门禁，将工程约束转化为可执行检查；规划资产采用、版本覆盖、技能使用与质量指标。</p></div></div><p class="result"><strong>项目成果</strong>AI-Native 能力融入团队交付流程，团队端到端效率提升 <b>20%+</b>。</p></article>
+<div class="project-pair"><article class="project"><div class="project-meta"><span>支付宝 · 技术一号位</span><span>2020.05 — 2023.07</span></div><h3>线下支付产品数字化升级</h3><p>推动收钱码、聚合码等产品全链路数字化升级，融合多维数据，通过流失分析与算法模型识别支付流失原因，形成支付流失洞察工具集与商家体验评分模型。</p><p>构建支付体验优化平台，打通服务保障、错误码异动、流失分析、问题处置与产品迭代；优化支付架构的性能与耗时，支持支付成功率改善及业务增长。</p></article>
+<article class="project"><div class="project-meta"><span>支付宝 · 技术一号位</span><span>2018.12 — 2020.05</span></div><h3>支付宝扫一扫平台能力升级</h3><p>主导扫一扫从请求响应模式向预测推荐模式升级，基于端云协同及用户位置预测扫码数据，提前组装下发，实现客户端扫码无请求跳转。</p><p>解决海量用户与码值推荐、终端存储约束及支付性能、安全保障等问题。</p><p class="result"><strong>项目成果</strong>长耗时扫码数降至原来的 <b>1/10</b>，平均扫码耗时优化至毫秒级，改善扫码体验与成功率。</p></article></div>
+<article class="project lbs"><div class="project-meta"><span>蚂蚁 · 技术一号位</span><span>2013.12 — 2018.12</span></div><h3>蚂蚁 LBS 平台化建设</h3><p>建设空间算法、全球逆地理、POI 搜索、围栏运营及数据挖掘能力；打通营销与投放平台，支持位置围栏事件触发。支撑国际化、口碑搜索、AR 红包等产品，并作为 mPaaS 重点产品向多家机构输出。</p><div class="lbs-results"><div><strong>10ms 内</strong><span>地理服务耗时</span></div><div><strong>100+</strong><span>围栏平台服务业务</span></div><div><strong>2 倍</strong><span>业务点击率／搜索率提升</span></div></div><p>地理服务日调用量超 10 亿，沉淀亿级常驻地、千万级店铺位置等数据能力；到店、到站识别助力业务增长。申请 LBS 相关专利 4–5 项，其中通过国际专利 2 项。</p></article></section>
+<section class="education section"><p class="eyebrow">EDUCATION</p><div><h2>长安大学</h2><p>地理信息系统（GIS） · 本科</p><span>2003.09 — 2007.07</span></div></section>
+<section id="contact" class="contact"><div><p class="eyebrow">LET’S CONNECT</p><h2>期待与你交流。</h2><p>电商平台架构 · AI-Native 研发基础设施 · 技术管理</p></div><div class="contact-links"><a href="mailto:56098148@qq.com"><small>邮箱</small>56098148@qq.com</a><a href="tel:13520720348"><small>电话</small>13520720348</a><p>意向城市 · 北京</p></div></section>
+</main><footer><span>张德品 · 个人简历 2026</span><div><button type="button" id="print">打印简历 / 存为 PDF</button><a href="#">返回顶部</a></div></footer><script src="script.js"></script>
+</body></html>
