@@ -3,33 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101c33">
+  <meta name="theme-color" content="#f7f8f5">
   <meta name="description" content="张德品，京东本地生活部门 C2 级架构师 P9。专注 LBS 平台化建设、业务域平台化建设与 AI-Native 研发实践。">
   <title>张德品 · 简洁版简历</title>
+  <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="resume-brief.css">
 </head>
 <body>
   <a class="skip" href="#main">跳至正文</a>
-  <header class="masthead">
-    <div class="wrap">
-      <div class="topbar">
-        <span>个人简历 <span class="year">/ 2026</span></span>
-        <nav aria-label="简历导航">
-          <a href="index.html">详细版</a>
-          <a href="#expertise">核心技能</a>
-          <a href="#experience">职业经历</a>
-          <a href="#projects">重点项目</a>
-          <button id="print" type="button">打印 / 存为 PDF</button>
-        </nav>
-      </div>
+  <header class="site-header">
+    <div class="shell site-bar">
+      <a class="brand" href="index.html"><span class="monogram" aria-hidden="true">张</span>张德品</a>
+      <nav class="site-nav" aria-label="简历导航">
+        <a href="#expertise">核心技能</a>
+        <a href="#experience">职业经历</a>
+        <a href="#projects">重点项目</a>
+        <a class="button outline" href="index.html">详细版</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+  <section class="masthead" aria-labelledby="brief-title">
+    <div class="shell">
       <div class="profile">
         <div>
-          <h1>张德品</h1>
+          <h1 id="brief-title">张德品</h1>
           <p class="role">
             现任 · 京东本地生活 C2 架构师 P9<br>
             曾任 · 蚂蚁集团高级技术专家 P8
           </p>
           <p class="specialties">平台架构与 AI-Native 实践</p>
+          <button class="button primary" id="print" type="button" hidden>打印 / 存为 PDF</button>
         </div>
         <address id="contact">
           <span>意向城市 · 北京</span>
@@ -42,8 +46,8 @@
         <ul><li>商家</li><li>门店</li><li>商品</li><li>营销</li><li>订单</li><li>支付</li><li>LBS</li></ul>
       </div>
     </div>
-  </header>
-  <main id="main" class="wrap">
+  </section>
+  <div class="shell brief-content">
     <section id="expertise" aria-labelledby="results-heading">
       <h2 id="results-heading">三大核心技能</h2>
       <div class="results">
@@ -67,7 +71,7 @@
         <li><span class="date">2023.07 — 至今</span><strong>京东集团</strong><span>本地生活部门 C2 级架构师 P9</span></li>
         <li><span class="date">2013.12 — 2023.07</span><strong>蚂蚁金服 · 支付宝事业群</strong><span>高级技术专家 P8</span></li>
         <li><span class="date">2012.10 — 2013.12</span><strong>图吧科技 MapBar</strong><span>部门技术副经理</span></li>
-        <li><span class="date">2009.10 — 2012.10</span><strong>易智瑞(esrichina)</strong><span>地图研发工程师</span></li>
+        <li><span class="date">2009.10 — 2012.10</span><strong>易智瑞 EsriChina</strong><span>地图研发工程师</span></li>
         <li><span class="date">2008.04 — 2009.10</span><strong>中科软</strong><span>软件开发工程师</span></li>
       </ul>
     </section>
@@ -101,6 +105,7 @@
       <h2 id="education-heading">教育背景</h2>
       <p><strong>长安大学</strong>　地理信息系统（GIS）本科 <span class="date">2003.09 — 2007.07</span></p>
     </section>
+  </div>
   </main>
   <script src="script.js"></script>
 </body>
