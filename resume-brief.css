@@ -31,17 +31,20 @@
 .career { list-style: none; padding: 0; }
 .career li { display: grid; grid-template-columns: 10rem 1fr 1fr; gap: .25rem .8rem; padding-block: .55rem; }
 .career li + li { border-top: 1px solid var(--line); }
+.career-note { grid-column: 2 / -1; color: var(--muted); }
 .education .date { display: inline-block; }
 
 @media (max-width: 700px) {
   .results, .project-list, .career li { grid-template-columns: 1fr; }
   .career li { gap: 0; }
+  .career-note { grid-column: 1; }
 }
 @media print {
   .profile { padding: 0 0 5pt; }
   .profile h1 { font-size: 24pt; letter-spacing: 0; }
   .role, .specialties { font-size: 10pt; margin-top: 2pt; }
   .profile address a { min-height: 0; }
+  .profile a[download] { display: none; }
   .domains { padding-bottom: 5pt; }
   .brief-content > section { padding-block: 7pt; }
   .brief-content h2 { font-size: 13pt; margin-bottom: 4pt; break-after: avoid; }
@@ -51,5 +54,6 @@
   .project-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6pt 12pt; }
   .results article { padding-top: 4pt; }
   .career li { grid-template-columns: 105pt 1fr 1fr; padding-block: 2pt; }
+  .career-note { grid-column: 2 / -1; }
   article, .career li { break-inside: avoid; }
 }
